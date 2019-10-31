@@ -1,0 +1,22 @@
+version: '3.1'
+
+services:
+
+  sut:
+    image: alpine:3.10.2
+    command: ls -l /data/README.md
+    depends_on:
+      - assets
+    volumes:
+      - jhuda-assets:/data
+
+  assets:
+    build:
+      context: .
+    volumes:
+      - jhuda-assets:/data
+
+volumes:
+
+  jhuda-assets:
+    driver: local
