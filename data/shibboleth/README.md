@@ -3,7 +3,7 @@
 ## Shibboleth IdP
 Configuration for development IdP instances
 
-[Example usage](https://github.com/jhu-sheridan-libraries/jhuda-docker-idp/Dockerfile) within a `Dockerfile` for the JHU Data Archive:
+[Example usage](https://github.com/jhu-sheridan-libraries/jhuda-docker-idp/blob/master/Dockerfile) within a `Dockerfile` for the JHU Data Archive:
 ```
 COPY --from=jhuda/assets:latest /data/shibboleth/jhuda/shibboleth-idp/conf /opt/shibboleth-idp/conf
 COPY --from=jhuda/assets:latest /data/shibboleth/jhuda/shibboleth-idp/metadata /opt/shibboleth-idp/metadata
