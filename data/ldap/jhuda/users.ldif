@@ -1,0 +1,69 @@
+dn: cn=admin,dc=archive
+objectClass: simpleSecurityObject
+objectClass: organizationalRole
+cn: admin
+userPassword: password
+description: LDAP administrator
+
+dn: uid=honestbroker,ou=People,dc=archive
+uid: honestbroker
+uidNumber: 7000
+gidNumber: 5000
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: eduPerson
+givenName: Honest
+sn: Broker
+cn: Honest Broker
+mail: honestbroker@jhu.edu
+userPassword: moo
+eduPersonUniqueId: JHUDAHB
+employeeNumber: 00011111
+displayName: Honest Broker
+employeeType: STAFF
+homeDirectory: /home/honestbroker
+
+dn: uid=curator,ou=People,dc=archive
+uid: curator
+uidNumber: 7001
+gidNumber: 5000
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: eduPerson
+givenName: Curator
+sn: Curator
+cn: Curator
+mail: curator@jhu.edu
+userPassword: moo
+eduPersonUniqueId: JHUDACUR
+employeeNumber: 00111110
+displayName: Curator
+employeeType: STAFF
+homeDirectory: /home/curator
+
+dn: uid=depositor,ou=People,dc=archive
+uid: depositor
+uidNumber: 7002
+gidNumber: 5000
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: eduPerson
+givenName: depositor
+sn: depositor
+cn: depositor
+mail: depositor@jhu.edu
+userPassword: moo
+eduPersonUniqueId: JHUDAdep
+employeeNumber: 00111110
+displayName: depositor
+employeeType: STAFF
+homeDirectory: /home/depositor

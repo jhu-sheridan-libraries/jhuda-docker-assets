@@ -1,0 +1,489 @@
+dn: cn=admin,dc=pass
+objectClass: simpleSecurityObject
+objectClass: organizationalRole
+cn: admin
+userPassword: password
+description: LDAP administrator
+
+dn: uid=staff1,ou=People,dc=pass
+uid: staff1
+uidNumber: 7000
+gidNumber: 5000
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: eduPerson
+givenName: Staff
+sn: Hasgrants
+cn: Staff Hasgrants
+mail: staffWithGrants@jhu.edu
+userPassword: moo
+eduPersonUniqueId: 3PD4GS
+employeeNumber: 00017179
+displayName: Staff Hasgrants
+employeeType: STAFF
+homeDirectory: /home/staff1
+
+dn: uid=staff2,ou=People,dc=pass
+uid: staff2
+uidNumber: 7001
+gidNumber: 5000
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: eduPerson
+givenName: Staff
+sn: Hasnogrants
+cn: Staff Hasnogrants
+mail: staffWithNoGrants@jhu.edu
+userPassword: moo
+eduPersonUniqueId: FAKE0002
+employeeNumber: 1020304
+displayName: Staff Hasnogrants
+employeeType: STAFF
+homeDirectory: /home/staff2
+
+dn: uid=faculty1,ou=People,dc=pass
+uid: faculty1
+uidNumber: 7002
+gidNumber: 5000
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: eduPerson
+givenName: Faculty
+sn: Hasgrants
+cn: Faculty Hasgrants
+mail: facultyWithGrants@jhu.edu
+userPassword: moo
+eduPersonUniqueId: UC8KV5
+employeeNumber: 00003343
+displayName: Faculty Hasgrants
+employeeType: FACULTY
+homeDirectory: /home/faculty1
+
+dn: uid=faculty2,ou=People,dc=pass
+uid: faculty2
+uidNumber: 7003
+gidNumber: 5000
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: eduPerson
+givenName: Faculty
+sn: Hasnogrants
+cn: Faculty Hasnogrants
+mail: facultyWithNoGrants@jhu.edu
+userPassword: moo
+eduPersonUniqueId: FAKE0001
+employeeNumber: 2040608
+displayName: Faculty Hasnogrants
+employeeType: FACULTY
+homeDirectory: /home/faculty2
+
+dn: uid=nih-user,ou=People,dc=pass
+uid: nih-user
+uidNumber: 7004
+gidNumber: 5000
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: eduPerson
+givenName: Nihu
+sn: Ser
+cn: Nihu Ser
+mail: nihuser@jhu.edu
+userPassword: moo
+eduPersonUniqueId: KYWJIT
+employeeNumber: 00001421
+displayName: Nihu Ser
+employeeType: FACULTY
+homeDirectory: /home/nih-user
+
+dn: uid=ed-user,ou=People,dc=pass
+uid: ed-user
+uidNumber: 7005
+gidNumber: 5000
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: eduPerson
+givenName: Ed
+sn: User
+cn: Ed User
+mail: eduser@jhu.edu
+userPassword: moo
+eduPersonUniqueId: FAKE0006
+employeeNumber: 00010090
+displayName: Ed User
+employeeType: FACULTY
+homeDirectory: /home/ed-user
+
+dn: uid=incomplete-nih-user,ou=People,dc=pass
+uid: incomplete-nih-user
+uidNumber: 7006
+gidNumber: 5000
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: eduPerson
+givenName: Incomplete
+sn: Nihuser
+cn: Incomplete Nihuser
+mail: incompletenihuser@jhu.edu
+userPassword: moo
+employeeNumber: 00023666
+eduPersonUniqueId: SDH72F
+displayName: Incomplete Nihuser
+employeeType: FACULTY
+homeDirectory: /home/incomplete-nih-user
+
+dn: uid=usaid-user,ou=People,dc=pass
+uid: usaid-user
+uidNumber: 7007
+gidNumber: 5000
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: eduPerson
+givenName: Usai
+sn: Duser
+cn: Usai Duser
+mail: usaiduser@jhu.edu
+userPassword: moo
+employeeNumber: 00003088
+eduPersonUniqueId: KYN456
+displayName: Usai Duser
+employeeType: FACULTY
+homeDirectory: /home/usaid-user
+
+dn: uid=admin,ou=People,dc=pass
+uid: admin
+uidNumber: 7008
+gidNumber: 5000
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: eduPerson
+givenName: Grant
+sn: Admin
+cn: Grant Admin
+mail: grant-admin@jhu.edu
+userPassword: moo
+eduPersonUniqueId: FAKE0003
+employeeNumber: 99000001
+displayName: Grant Admin
+employeeType: STAFF
+homeDirectory: /home/admin
+
+dn: uid=admin-submitter,ou=People,dc=pass
+uid: admin-submitter
+uidNumber: 7009
+gidNumber: 5000
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: eduPerson
+givenName: Grant
+sn: Admin
+cn: Grant Admin
+mail: grant-admin-submitter@jhu.edu
+userPassword: moo
+eduPersonUniqueId: FAKE0004
+employeeNumber: 99000002
+displayName: Grant Admin + Submitter
+employeeType: STAFF
+homeDirectory: /home/admin-submitter
+
+dn: uid=superuser,ou=People,dc=pass
+uid: superuser
+uidNumber: 7010
+gidNumber: 5000
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: eduPerson
+givenName: Super
+sn: User
+cn: Superuser
+mail: superuser@jhu.edu
+userPassword: moo
+eduPersonUniqueId: FAKE0005
+employeeNumber: 99000003
+displayName: Superuser
+employeeType: STAFF
+homeDirectory: /home/superuser
+
+dn: uid=notification-prod-cc,ou=People,dc=pass
+uid: notification-prod-cc
+uidNumber: 7011
+gidNumber: 5000
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: eduPerson
+givenName: Notification Prod
+sn: Prod
+cn: Notification Prod CC
+mail: notification-prod-cc@jhu.edu
+userPassword: moo
+eduPersonUniqueId: FAKE0005
+employeeNumber: 99000003
+displayName: Notification Prod
+employeeType: STAFF
+homeDirectory: /home/nprodcc
+
+dn: uid=notification-demo-cc,ou=People,dc=pass
+uid: notification-demo-cc
+uidNumber: 7012
+gidNumber: 5000
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: eduPerson
+givenName: Notification Demo
+sn: Demo
+cn: Notification Demo CC
+mail: notification-demo-cc@jhu.edu
+userPassword: moo
+eduPersonUniqueId: FAKE0005
+employeeNumber: 99000003
+displayName: Notification Demo
+employeeType: STAFF
+homeDirectory: /home/ndemocc
+
+dn: uid=newsubmitter1,ou=People,dc=pass
+uid: newsubmitter1
+uidNumber: 7013
+gidNumber: 5000
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: eduPerson
+givenName: New
+sn: Submitter
+cn: New Submitter
+mail: newsubmitter1@jhu.edu
+userPassword: moo
+eduPersonUniqueId: NEWSUB0001
+employeeNumber: 999900001
+displayName: New Submitter I
+employeeType: FACULTY
+homeDirectory: /home/newsubmitter1
+
+dn: uid=newsubmitter2,ou=People,dc=pass
+uid: newsubmitter2
+uidNumber: 7014
+gidNumber: 5000
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: eduPerson
+givenName: New
+sn: Submitter
+cn: New Submitter 2
+mail: newsubmitter2@jhu.edu
+userPassword: moo
+eduPersonUniqueId: NEWSUB0002
+employeeNumber: 999900002
+displayName: New Submitter II
+employeeType: FACULTY
+homeDirectory: /home/newsubmitter2
+
+dn: uid=newsubmitter3,ou=People,dc=pass
+uid: newsubmitter3
+uidNumber: 7015
+gidNumber: 5000
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: eduPerson
+givenName: New
+sn: Submitter
+cn: New Submitter 3
+mail: newsubmitter3@jhu.edu
+userPassword: moo
+eduPersonUniqueId: NEWSUB0003
+employeeNumber: 999900003
+displayName: New Submitter III
+employeeType: FACULTY
+homeDirectory: /home/newsubmitter3
+
+dn: uid=newsubmitter4,ou=People,dc=pass
+uid: newsubmitter4
+uidNumber: 7016
+gidNumber: 5000
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: eduPerson
+givenName: New
+sn: Submitter
+cn: New Submitter 4
+mail: newsubmitter4@jhu.edu
+userPassword: moo
+eduPersonUniqueId: NEWSUB0004
+employeeNumber: 999900004
+displayName: New Submitter IV
+employeeType: FACULTY
+homeDirectory: /home/newsubmitter4
+
+dn: uid=newsubmitter5,ou=People,dc=pass
+uid: newSubmitter5
+uidNumber: 7017
+gidNumber: 5000
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: eduPerson
+givenName: New
+sn: Submitter
+cn: New Submitter 5
+mail: newsubmitter5@jhu.edu
+userPassword: moo
+eduPersonUniqueId: NEWSUB0005
+employeeNumber: 999900005
+displayName: New Submitter V
+employeeType: FACULTY
+homeDirectory: /home/newsubmitter5
+
+dn: uid=noEmail1,ou=People,dc=pass
+uid: noEmail1
+uidNumber: 7018
+gidNumber: 5000
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: eduPerson
+givenName: No
+sn: Email
+cn: No Email
+mail: noEmail1@jhu.edu
+userPassword: moo
+eduPersonUniqueId: ST4LBJ
+employeeNumber: 00087442
+displayName: No Email I
+employeeType: STAFF
+homeDirectory: /home/noEmail1
+
+dn: uid=noEmail2,ou=People,dc=pass
+uid: noEmail2
+uidNumber: 7019
+gidNumber: 5000
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: eduPerson
+givenName: No
+sn: Email
+cn: No Email
+mail: noEmail2@jhu.edu
+userPassword: moo
+eduPersonUniqueId: V0AE4J
+employeeNumber: 00054756
+displayName: No Email II
+employeeType: FACULTY
+homeDirectory: /home/noEmail2
+
+dn: uid=noEmail3,ou=People,dc=pass
+uid: noEmail3
+uidNumber: 7020
+gidNumber: 5000
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: eduPerson
+givenName: No
+sn: Email
+cn: No Email
+mail: noEmail3@jhu.edu
+userPassword: moo
+eduPersonUniqueId: K0X3RY
+employeeNumber: 00053342
+displayName: No Email III
+employeeType: STAFF
+homeDirectory: /home/noEmail3
+
+dn: uid=noEmail4,ou=People,dc=pass
+uid: noEmail4
+uidNumber: 7021
+gidNumber: 5000
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: eduPerson
+givenName: No
+sn: Email
+cn: No Email
+mail: noEmail4@jhu.edu
+userPassword: moo
+eduPersonUniqueId: 71NETB
+employeeNumber: 00054068
+displayName: No Email IV
+employeeType: STAFF
+homeDirectory: /home/noEmail4
+
+dn: uid=noEmail5,ou=People,dc=pass
+uid: noEmail5
+uidNumber: 7022
+gidNumber: 5000
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: eduPerson
+givenName: No
+sn: Email
+cn: No Email
+mail: noEmail5@jhu.edu
+userPassword: moo
+eduPersonUniqueId: P44N8C
+employeeNumber: 00101877
+displayName: No Email V
+employeeType: STAFF
+homeDirectory: /home/noEmail5
