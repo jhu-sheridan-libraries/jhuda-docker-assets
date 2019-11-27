@@ -10,4 +10,5 @@ docker build --label "SOURCE_BRANCH=${SOURCE_BRANCH}" \
              --label "DOCKER_TAG=${DOCKER_TAG}" \
              --label "IMAGE_NAME=${IMAGE_NAME}" \
              -t ${IMAGE_NAME} \
-             . ${DOCKERFILE_PATH}
+             -f ${DOCKERFILE_PATH} \
+             .
